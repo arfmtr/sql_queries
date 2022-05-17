@@ -2,4 +2,4 @@
 SELECT t1.last_name, COUNT(*) AS total FROM user AS t1 
 JOIN purchase AS t2 ON t1.id = t2.fk_purchase_user 
 GROUP BY t1.last_name 
-HAVING total >= 2
+HAVING total >= 2;
